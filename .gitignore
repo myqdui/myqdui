@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+.next/
+storybook-static/
+coverage/
+.turbo/
+
+# environments
+.env
+.env.*
+!.env.example
+
+# os and editor
+.DS_Store
+*.log
