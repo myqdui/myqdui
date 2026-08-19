@@ -1,0 +1,28 @@
+{
+  "name": "@myqdui/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./tokens.css": "./dist/tokens.css",
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "src"],
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "lint:package": "publint && attw --pack . --profile esm-only --exclude-entrypoints tokens.css"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "publint": "0.3.23",
+    "typescript": "6.0.3",
+    "unplugin-dts": "1.0.3",
+    "vite": "8.2.1"
+  }
+}
