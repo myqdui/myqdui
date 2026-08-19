@@ -1,0 +1,12 @@
+/*
+ * Placeholder CSS to prove the build.
+ * Actual token architecture is another issue.
+ */
+@layer myqdui.tokens {
+    :root {
+        color-scheme: light dark;
+        --myqdui-color-brand: oklch(0.628 0.2577 29.23);
+        --myqdui-color-surface: light-dark(oklch(1 0 0), oklch(0 0 0));
+        --myqdui-color-text: light-dark(oklch(0 0 0), oklch(1 0 0));
+    }
+}
