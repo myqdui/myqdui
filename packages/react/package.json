@@ -1,0 +1,55 @@
+{
+  "name": "@myqdui/react",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Looma Joy Iacobazzi Riecan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myqdui/myqdui.git",
+    "directory": "packages/react"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "default": "./dist/*/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/*.css"
+  ],
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "lint:package": "publint && attw --pack . --profile esm-only"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@myqdui/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "@vitejs/plugin-react": "6.0.5",
+    "publint": "0.3.23",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "typescript": "6.0.3",
+    "unplugin-dts": "1.0.3",
+    "vite": "8.2.1",
+    "vite-plugin-lib-inject-css": "2.2.2"
+  }
+}
