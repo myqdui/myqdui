@@ -3,6 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "license": "MIT",
+  "author": "Looma Joy Iacobazzi Riecan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myqdui/myqdui.git",
+    "directory": "packages/core"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
