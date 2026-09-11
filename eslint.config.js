@@ -9,7 +9,8 @@ export default tseslint.config(
         ignores: [
             "**/dist/**",
             "**/node_modules/**",
-            "**/.turbo/**"
+            "**/.turbo/**",
+            "loomas-sandbox/**"
         ]
     },
     js.configs.recommended,
