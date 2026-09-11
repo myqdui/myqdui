@@ -13,6 +13,9 @@ coverage/
 .env.*
 !.env.example
 
+# my personal space for local experiments, but feel free to use it
+/loomas-sandbox/
+
 # os and editor
 .DS_Store
 *.log
